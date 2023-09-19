@@ -23,20 +23,19 @@ def parse_args():
 def search_config_files(args):
     """
     search for NPM files, gradle files or both
-
     """
     if args.npm is True:
-        search_NPM()
+        search_npm()
 
     elif args.gradle is True:
         search_gradle()
 
     else:
-        search_NPM()
+        search_npm()
         search_gradle()
 
 
-def search_NPM():
+def search_npm():
     """
     search npm files: package.json and package-lock.json
     """
@@ -66,7 +65,6 @@ def search_file(filename):
             print("Found a {} file in the directory.".format(filename))
             return True
     return False
-
 
 
 if __name__ == "__main__":
