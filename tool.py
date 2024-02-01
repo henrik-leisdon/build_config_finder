@@ -65,6 +65,9 @@ def search_file(filename):
             print("Found a {} file in the directory.".format(filename))
             return True
     return False
+    
+def another_method_to_test_github_actions():
+    pass
 
 
 if __name__ == "__main__":
