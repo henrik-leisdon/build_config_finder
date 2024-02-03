@@ -17,5 +17,5 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
     steps:
-    	- pip install black
-    	- black tool.py
+    	- run: pip install black
+    	- run: black tool.py
