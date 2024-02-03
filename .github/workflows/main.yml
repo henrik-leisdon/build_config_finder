@@ -19,5 +19,7 @@ jobs:
   Run-black:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
       - run: pip install black
       - run: black "${{ github.workspace }}/tool.py"
