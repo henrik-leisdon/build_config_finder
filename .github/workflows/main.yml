@@ -19,5 +19,5 @@ jobs:
   Run-black:
     runs-on: ubuntu-latest
     steps:
-    	- run: pip install black
-    	- run: black tool.py
+      - run: pip install black
+      - run: black tool.py
