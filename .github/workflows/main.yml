@@ -20,4 +20,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: pip install black
-      - run: black tool.py
+      - run: black /home/runner/work/build_config_finder/build_config_finder/tool.py
